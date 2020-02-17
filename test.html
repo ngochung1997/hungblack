@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>hello</title>
+</head>
+
+<body>
+	<h1>Tìm số nhỏ nhất bằng "Math.min"</h1>
+	<button onclick = "myFunction()">Nhỏ</button>
+    <button onclick = "myFunctions()">Lớn</button>	
+    <p id="timso"></p>
+<script type="text/javascript">
+
+//Minimun  
+         document.getElementById("timso").innerHTML = '4, 5, 24, 44, 98, -13, 10, 3.4325';
+            function myFunction() {
+                document.getElementById("timso").innerHTML = 'Giá trị nhỏ nhất = ' + 
+                Math.min(4, 5, 24, 44, 98, -13, 10, 3.4325);
+            } 
+			function myFunctions() {
+                document.getElementById("timso").innerHTML = 'Giá trị lớn nhất = ' + 
+                Math.max(4, 5, 24, 44, 98, -13, 10, 3.4325);
+			}
+// looping a triangle
+
+
+for(var i = 0; i <= 7; i++){
+	
+	var art= "";
+	
+	for(var j = i + 1; j <=7 ; j++ ){
+		
+		art += j + "&nbsp;"
+	}
+		document.writeln(i + "&nbsp;" + art + "<br />");
+	};
+	
+// FIZZ BUZZ
+var number = 1;
+for(number = 1; number <=100 ; number++){	
+	if(number % 3 == 0){
+		document.writeln(number + "Fizz" + "<br/>");
+		}else if(number % 5 == 0){
+			document.writeln(number + "Buzz" + "<br/>")
+			}else {
+				document.writeln(number +"FizzBuzz" + "<br />")
+				}
+	};
+// CHESSBOARD
+
+
+</script>
+// Bean Counting
+<h2>Tìm ký tự A trong chuỗi</h2>
+ <button onclick = "myString()">Đếm</button>
+ <p id="demkytu"></p>
+ <script>
+            var str = 'ABC,abc,ABC,ACB,ABE,ADF,RTB';
+            document.getElementById("demkytu").innerHTML = str;
+            function myString() {
+                document.getElementById("demkytu").innerHTML = str.split('A').length - 1 + " là số lần A xuất hiện trong chuỗi";
+            }
+
+	/*var i = "ABC,abc2,ABC1,abc1";
+	document.writeln(i.split("A").length - 1 + " la so lan xuat hien trong chuoi" + "<br/>");
+	document.writeln(i.split(",").length - 1 + " la so lan xuat hien trong chuoi" + "<br/>");*/
+	
+		
+</script>
+
+</body>
+</html>
